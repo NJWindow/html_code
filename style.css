@@ -1,0 +1,410 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#Welcome {
+  margin: auto;
+  text-align:center;
+  padding-top: 30px;
+}
+
+h1 {
+  color: black;
+  font-family: 'Times New Roman', Times, serif sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 1px;
+  }
+
+#body {
+  font-family: sans-serif;
+  color: black;
+  width: 50%; 
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+#main {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.prices{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row;
+  max-height: 100vh;
+}
+
+.cards img {
+  margin: 10px;
+  border: 3px solid #000;
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+  max-width: 23vw;
+}
+
+.flex_container {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flex_container1 {
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/**index_images**/
+.inner_box1 {
+  flex: 1 0 30%;
+background-image: url(./img/image01.webp);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+flex-wrap: wrap;
+}
+
+.inner_box2 {
+  flex: 1 0 40%;
+} 
+
+.inner_box3 {
+  flex: 1 0 30%;
+background-image: url(./img/image012.webp);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+flex-flow: wrap;
+} 
+/**Index_images_end**?
+
+/**Midriseprices**/
+.inner_box4 {
+  flex: 1 0 30%;
+background-image: url(./img/Flobby.jpg);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+flex-wrap: wrap;
+} 
+
+.inner_box5 {
+  flex: 1 0 30%;
+background-image: url(./img/lift1.jpg);
+background-size: contain;
+flex-wrap: wrap;
+background-repeat: no-repeat;
+background-position: center;
+} 
+
+.inner_box6 {
+  flex: 1 0 30%;
+} 
+/**MidrisePricesEnd**/
+
+/**Residential_images_start**/
+.inner_box7 {
+  flex: 1 0 30%;
+background-image: url(./img/residential-home.jpg);
+background-size: contain;
+flex-wrap: wrap;
+background-repeat: no-repeat;
+background-position: center;
+} 
+
+.inner_box8 {
+  flex: 1 0 30%;
+background-image: url(./img/residential_cleaning_wfp.jpg);
+background-size: contain;
+flex-wrap: wrap;
+background-repeat: no-repeat;
+background-position: center;
+} 
+
+/**Residential_images_stop**/
+
+/**federal-images-start**/
+.inner_box9 {
+  flex: 1 0 30%;
+background-image: url(./img/front.jpg);
+background-size: contain;
+flex-wrap: wrap;
+background-repeat: no-repeat;
+background-position: center;
+} 
+
+.inner_box10 {
+  flex: 1 0 30%;
+background-image: url(./img/lift2.jpg);
+background-size: contain;
+flex-wrap: wrap;
+background-repeat: no-repeat;
+background-position: center;
+} 
+/**federal-images-stop**/
+
+/**locatons**/
+.map {
+  display: flex;
+  flex: 1 0 30%;
+background-size: contain;
+flex-wrap: wrap;
+background-repeat: no-repeat;
+justify-content: center;
+} 
+
+/**locations-end**/
+
+#footer {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+ 
+}
+
+#social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+header {
+  position: -webkit-sticky absolute;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.header-content {
+  display: flex;
+  margin: 0 auto;
+  padding: 1px 20px;
+  justify-content: space-between;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 2em;
+  color: inherit;
+  justify-content: left;
+}
+
+label {
+  padding: 23px 20px;
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+}
+
+input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  right: 0;
+}
+
+label span {
+  width: 20px;
+  height: 3px;
+  display: block;
+  background: #4f3e3e;
+  position: relative;
+}
+
+label span::after, label span::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background: inherit;
+  width: inherit;
+  height: inherit;
+} 
+
+label span::before{
+  top: 8px;
+}
+
+label span::after {
+  bottom: 8px;
+} 
+
+label::before {
+  position: absolute;
+  content: "";
+  width: 58px;
+  height: 49px; 
+  top: 0;
+  right: 0;
+}
+
+input[type="checkbox"]:focus + label::before {
+  box-shadow: 0 0 20px black;
+}
+
+ul {
+  background: #f2f2f2;
+}
+
+ul li {
+   list-style: none;
+   font-size: 18px;
+}
+
+ul li button {
+    font-size: inherit;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+}
+
+ul li a {
+   display: block;
+   color: inherit;
+   text-decoration: none;
+}
+
+ul li a, ul li button {
+  padding: 0.7rem 1rem;
+  text-align: left;
+}
+
+.menus {
+  position:absolute;
+  top: 3.2rem;
+  left: 0;
+  right: 0;
+  
+  /*  hide dropdown on small screens  */
+  visibility: hidden;
+  /*  smooth transitioning  */
+  transform: translateY(-1em);
+  transition: transform ease 0.2s;
+}
+
+/* toggle main dropdown */
+
+input[type="checkbox"]:checked ~ nav > ul {
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown {
+  padding: 2px 1.5rem;
+  height: 0;
+  overflow: hidden;
+  transition: height ease 0.2s;
+}
+
+li:focus-within .dropdown {
+
+}
+
+.arrow {
+  width: 0.5em;
+  height: 0.5em;
+  display: inline-block;
+  vertical-align: middle;
+  border-left: 0.15em solid currentColor;
+  border-bottom: 0.15em solid currentColor;
+  transform: rotate(-45deg);
+  margin-left: 0.38em;
+  margin-top: -0.25em;
+  transition: transform 100ms ease-in-out;
+}
+
+li:focus-within > button > .arrow {
+  transform: rotate(-225deg);
+  margin-top: 4px;
+}
+
+/* MEDIA QUERIES  */
+@media (min-width: 640px) {
+  
+  .header-content {
+    display: flex;
+  }
+  
+  .menus {
+    position:sticky;
+    align-content:center;
+    visibility: visible;
+    background: #fff;
+    display: flex;
+    transform: initial;
+  }
+  
+  label, input[type="checkbox"] {
+    display: none;
+  }
+  
+  ul li {
+    position: relative;
+    font-size: 14px;
+  }
+  
+  ul li a:hover,
+  ul li button:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .dropdown {
+    position: absolute;
+    right: 0;
+    left: auto;
+    box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
+    0 4px 6px -2px rgba(71, 63, 79, 0.16);
+    z-index: 99;
+    min-width: 10rem;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 0 0 0.5rem 0.5rem; 
+  }
+  
+  ul li:hover .dropdown {
+    height:auto;
+  }
+  
+  ul li:hover > button > .arrow {
+    transform: rotate(-225deg);
+    margin-top: 4px;
+  }
+}
